@@ -92,11 +92,6 @@
     <Content Include="app\templates\app\loginpartial.html" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="readme.html">
-      <SubType>WebBrowser</SubType>
-    </None>
-  </ItemGroup>
-  <ItemGroup>
     <Interpreter Include="env1\">
       <Id>env1</Id>
       <Version>3.6</Version>
