@@ -1,0 +1,26 @@
+﻿{% extends "app/layout.html" %}
+
+{% block content %}
+
+<div class="jumbotron">
+    <h1>Django</h1>
+    <p class="lead">Сайт находится в разработке... </p>
+</div>
+
+<div class="row">
+    <div class="col-md-4">
+        <h2>Getting started</h2>
+        <p>
+            Оставьте контакты и мы с Вами свяжемся
+        </p>
+        <div>
+            <form action="" method="post"> {% csrf_token %}
+                {{ form.as_p }}
+                <button type="submit" class="btn btn-primary" > Отправить </button>
+            </form>
+            
+        </div>
+    </div>
+</div>
+
+{% endblock %}
