@@ -18,6 +18,7 @@ class Status(models.Model):
 
 
 class Order(models.Model):
+    total_order_price = models.DecimalField(max_digits=10, decimal_places=2, default=0)
     customer_email = models.EmailField(blank=True, null=True, default=None)
     customer_name = models.CharField(max_length=128, blank=True, null=True, default=None)
     customer_phone = models.CharField(max_length=48, blank=True, null=True, default=None)
@@ -37,6 +38,9 @@ class Order(models.Model):
 class ProductInOrder(models.Model):
     order = models.ForeignKey(Order, blank=True, null=True, default=None, on_delete=models.CASCADE)
     product = models.ForeignKey(Product, blank=True, null=True, default=None, on_delete=models.CASCADE)
+    num = models.IntegerField(default=1)
+    price_per_item = models.DecimalField(max_digits=10, decimal_places=2, default=0)
+    total_price = models.DecimalField(max_digits=10, decimal_places=2, default=0)
     customer_email = models.EmailField(blank=True, null=True, default=None)
     customer_name = models.CharField(max_length=128, blank=True, null=True, default=None)
     customer_phone = models.CharField(max_length=48, blank=True, null=True, default=None)
