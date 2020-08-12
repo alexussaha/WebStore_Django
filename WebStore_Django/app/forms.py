@@ -21,5 +21,5 @@ class BootstrapAuthenticationForm(AuthenticationForm):
 class SubscriberForm(forms.ModelForm):
     
     class Meta:
-        model = Subscribers
+        model = Subscriber
         exclude = [""]
