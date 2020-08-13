@@ -6,22 +6,13 @@ from datetime import datetime
 from django.shortcuts import render
 from django.http import HttpRequest
 from .forms import SubscriberForm
+from products.models import *
 
 def home(request):
-    """Renders the home page."""
-    assert isinstance(request, HttpRequest)
-    form = SubscriberForm(request.POST or None)
-    if request.method == "POST" and form.is_valid:
-        new_form = form.save()
-    return render(
-        request,
-        'app/index.html',
-        {
-            'title':'Home Page',
-            'year':datetime.now().year,
-            'form':form,
-        }
-    )
+    products_images = ProductImage.objects.filter(is_active=True, is_main=True, product__is_active=True)
+    products_images_phones = products_images.filter(product__category__id=1)
+    products_images_laptops = products_images.filter(product__category__id=2)
+    return render(request, 'app/home.html', locals())
 
 def contact(request):
     """Renders the contact page."""
