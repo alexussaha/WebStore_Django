@@ -83,6 +83,7 @@
     <Folder Include="static\static_dev\" />
     <Folder Include="static\static_dev\css\" />
     <Folder Include="static\static_dev\img\" />
+    <Folder Include="static\static_dev\js\" />
     <Folder Include="static\static_prod\" />
     <Folder Include="static\static_prod\css\" />
     <Folder Include="templates\" />
@@ -92,6 +93,7 @@
     <Folder Include="products\" />
     <Folder Include="products\migrations\" />
     <Folder Include="templates\landing\" />
+    <Folder Include="templates\orders\" />
     <Folder Include="templates\products\" />
     <Folder Include="WebStore_Django\" />
   </ItemGroup>
@@ -122,6 +124,7 @@
     <Content Include="static\app\scripts\_references.js" />
     <Content Include="static\static_dev\css\Style.css" />
     <Content Include="static\static_dev\img\slider0.jpg" />
+    <Content Include="static\static_dev\js\scripts.js" />
     <Content Include="static\static_prod\css\Style.css" />
     <Content Include="templates\app\about.html" />
     <Content Include="templates\app\contact.html" />
@@ -130,11 +133,13 @@
     <Content Include="templates\app\login.html" />
     <Content Include="templates\app\loginpartial.html" />
     <Content Include="templates\base.html" />
+    <Content Include="templates\basket.html" />
     <Content Include="templates\footer.html" />
     <Content Include="templates\app\home.html" />
     <Content Include="templates\app\landing.html" />
     <Content Include="templates\app\product_item.html" />
     <Content Include="templates\navbar.html" />
+    <Content Include="templates\orders\basket.html" />
     <Content Include="templates\products\product.html" />
   </ItemGroup>
   <ItemGroup>
