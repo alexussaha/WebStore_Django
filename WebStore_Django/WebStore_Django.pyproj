@@ -136,6 +136,7 @@
     <Content Include="templates\app\login.html" />
     <Content Include="templates\app\loginpartial.html" />
     <Content Include="templates\base.html" />
+    <Content Include="templates\basket.html" />
     <Content Include="templates\footer.html" />
     <Content Include="templates\app\home.html" />
     <Content Include="templates\app\landing.html" />
