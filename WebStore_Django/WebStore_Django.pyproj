@@ -47,6 +47,9 @@
     <Compile Include="manage.py" />
     <Compile Include="orders\admin.py" />
     <Compile Include="orders\apps.py" />
+    <Compile Include="orders\context_processors.py">
+      <SubType>Code</SubType>
+    </Compile>
     <Compile Include="orders\migrations\__init__.py" />
     <Compile Include="orders\models.py" />
     <Compile Include="orders\tests.py" />
@@ -80,21 +83,24 @@
     <Folder Include="static\app\scripts\" />
     <Folder Include="static\media\" />
     <Folder Include="static\media\product_images\" />
-    <Folder Include="app\templates\" />
-    <Folder Include="app\templates\app\" />
+    <Folder Include="static\static_dev\" />
+    <Folder Include="static\static_dev\css\" />
+    <Folder Include="static\static_dev\img\" />
+    <Folder Include="static\static_dev\js\" />
+    <Folder Include="static\static_prod\" />
+    <Folder Include="static\static_prod\css\" />
+    <Folder Include="templates\" />
+    <Folder Include="templates\app\" />
     <Folder Include="orders\" />
     <Folder Include="orders\migrations\" />
-    <Folder Include="orders\templates\" />
-    <Folder Include="orders\templates\orders\" />
     <Folder Include="products\" />
     <Folder Include="products\migrations\" />
-    <Folder Include="products\templates\" />
-    <Folder Include="products\templates\products\" />
+    <Folder Include="templates\landing\" />
+    <Folder Include="templates\orders\" />
+    <Folder Include="templates\products\" />
     <Folder Include="WebStore_Django\" />
   </ItemGroup>
   <ItemGroup>
-    <Content Include="orders\templates\orders\index.html" />
-    <Content Include="products\templates\products\index.html" />
     <Content Include="requirements.txt" />
     <Content Include="db.sqlite3" />
     <Content Include="static\app\content\bootstrap.css" />
@@ -119,12 +125,25 @@
     <Content Include="static\app\scripts\respond.js" />
     <Content Include="static\app\scripts\respond.min.js" />
     <Content Include="static\app\scripts\_references.js" />
-    <Content Include="app\templates\app\about.html" />
-    <Content Include="app\templates\app\contact.html" />
-    <Content Include="app\templates\app\index.html" />
-    <Content Include="app\templates\app\layout.html" />
-    <Content Include="app\templates\app\login.html" />
-    <Content Include="app\templates\app\loginpartial.html" />
+    <Content Include="static\static_dev\css\Style.css" />
+    <Content Include="static\static_dev\img\slider0.jpg" />
+    <Content Include="static\static_dev\js\scripts.js" />
+    <Content Include="static\static_prod\css\Style.css" />
+    <Content Include="templates\app\about.html" />
+    <Content Include="templates\app\contact.html" />
+    <Content Include="templates\app\index.html" />
+    <Content Include="templates\app\layout.html" />
+    <Content Include="templates\app\login.html" />
+    <Content Include="templates\app\loginpartial.html" />
+    <Content Include="templates\base.html" />
+    <Content Include="templates\basket.html" />
+    <Content Include="templates\footer.html" />
+    <Content Include="templates\app\home.html" />
+    <Content Include="templates\app\landing.html" />
+    <Content Include="templates\app\product_item.html" />
+    <Content Include="templates\navbar.html" />
+    <Content Include="templates\orders\basket.html" />
+    <Content Include="templates\products\product.html" />
   </ItemGroup>
   <ItemGroup>
     <Interpreter Include="env1\">
